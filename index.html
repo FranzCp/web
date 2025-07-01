@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - EcoTaste</title>
+    <link rel="stylesheet" href="css_Pingo/InicioSesion.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="full-screen-background-container">
+        <div class="eco-taste-info">
+            <div class="logo">
+                <img src="img/LOGO3.png" alt="EcoTaste Logo" class="rounded-circle p-2 bg-white">
+                <h1>EcoTaste</h1>
+            </div>
+            <p>Transforma tu forma de cocinar y cuidar tu salud.</p>
+            <p>Comparte tus recetas, inspira a otros y accede a contenido exclusivo</p>
+        </div>
+
+        <div class="login-panel">
+            <form id="loginForm" class="needs-validation" novalidate>
+                <div class="login-box p-4 p-md-5 bg-white rounded shadow-lg">
+                    <h2 class="text-center mb-3">Inicio de Sesión</h2>
+                    <p class="text-center new-user mb-4">¿Eres nuevo usuario? <a href="Registrarse.html"
+                            class="text-success fw-bold text-decoration-none">Regístrate</a></p>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-bold">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required>
+                        <div class="invalid-feedback">
+                            Por favor, ingrese un correo electrónico válido.
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label fw-bold">Contraseña:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña"
+                            required minlength="6">
+                        <div class="invalid-feedback">
+                            Por favor, ingrese su contraseña (mínimo 6 caracteres).
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100 py-2 mb-4" onclick="window.location.href='inicio.html'">Iniciar Sesión</button>
+                </div>
+
+                <div class="divider position-relative text-center my-4">
+                    <span class="bg-white px-2 text-muted fs-5">...</span>
+                </div>
+
+                <div class="social-login">
+                    <button class="btn btn-danger w-100 py-2 d-flex align-items-center justify-content-center mb-3">
+                        <i class="fab fa-google me-2"></i> Continúa con Google
+                    </button>
+                    <button class="btn btn-primary w-100 py-2 d-flex align-items-center justify-content-center mb-3">
+                        <i class="fab fa-facebook-f me-2"></i> Continúa con Facebook
+                    </button>
+                    <button class="btn btn-dark w-100 py-2 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-apple me-2"></i> Continúa con AppleID
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p class="text-center text-muted py-3">EcoTaste &copy; 2025. Todos los derechos reservados</p>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js_pingo/InicioSesion.js"></script>
+</body>
+
+</html>

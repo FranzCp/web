@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - EcoTaste</title>
+    <link rel="stylesheet" href="css_Pingo/InicioSesion.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="full-screen-background-container">
+        <div class="eco-taste-info">
+            <div class="logo">
+                <img src="img/LOGO3.png" alt="EcoTaste Logo" class="rounded-circle p-2 bg-white">
+                <h1>EcoTaste</h1>
+            </div>
+            <p>Transforma tu forma de cocinar y cuidar tu salud.</p>
+            <p>Comparte tus recetas, inspira a otros y accede a contenido exclusivo</p>
+        </div>
+
+        <div class="login-panel">
+            <form id="registroForm" class="needs-validation" novalidate>
+                <div class="login-box p-4 p-md-5 bg-white rounded shadow-lg">
+                    <h2 class="text-center mb-4">Registro de Usuario</h2>
+                    <div class="mb-3">
+                        <label for="username" class="form-label fw-bold">Nombre de Usuario:</label>
+                        <input type="text" class="form-control" id="username" placeholder="Ingrese su Nombre" required
+                            minlength="3">
+                        <div class="invalid-feedback">
+                            Por favor, ingrese un nombre de usuario (mínimo 3 caracteres).
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-bold">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required>
+                        <div class="invalid-feedback">
+                            Por favor, ingrese un correo electrónico válido.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label fw-bold">Contraseña:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña"
+                            required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9\s]).{8,}">
+                        <div class="invalid-feedback">
+                            Mínimo 8 caracteres, al menos una mayúscula, una minúscula, un número y un carácter
+                            especial.
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="confirmPassword" class="form-label fw-bold">Confirmar Contraseña:</label>
+                        <input type="password" class="form-control" id="confirmPassword"
+                            placeholder="Ingrese su contraseña nuevamente" required>
+                        <div class="invalid-feedback" id="confirmPasswordFeedback">
+                            Las contraseñas no coinciden.
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100 py-2" onclick="window.location.href='InicioSesion.html'">Registrarse</button>
+                </div>
+                <div class="divider position-relative text-center my-4">
+                    <span class="bg-white px-2 text-muted fs-5">...</span>
+                </div>
+
+                <div class="social-login">
+                    <button class="btn btn-danger w-100 py-2 d-flex align-items-center justify-content-center mb-3">
+                        <i class="fab fa-google me-2"></i> Regístrate con Google
+                    </button>
+                    <button class="btn btn-primary w-100 py-2 d-flex align-items-center justify-content-center mb-3">
+                        <i class="fab fa-facebook-f me-2"></i> Regístrate con Facebook
+                    </button>
+                    <button class="btn btn-dark w-100 py-2 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-apple me-2"></i> Regístrate con AppleID
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p class="text-center text-muted py-3">EcoTaste &copy; 2025. Todos los derechos reservados</p>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js_Pingo/Registrarse.js"></script>
+</body>
+
+</html>

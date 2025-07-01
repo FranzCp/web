@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soporte EcoTaste</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/maqueta.css">
+    <link rel="stylesheet" href="css/tiendaeco.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="content-wrapper">
+        <div class="sidebar" id="sidebar">
+            <button class="toggle-btn" id="toggleSidebar">
+                <img src="img/menu.png" alt="Menú" class="toggle-icon">
+            </button>
+
+            <a href="inicio.html" id="sidebar-logo" class="d-flex align-items-center text-decoration-none mb-3">
+                <img src="img/LOGO3.png" alt="EcoTaste Logo" style="width: 24px; height: 24px; margin-right: 8px;">
+                <span class="fw-bold text-dark">EcoTaste</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#">
+                    <img src="img/buscar.png" alt="Buscar" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Buscar</span>
+                </a>
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-decoration-none" id="dropdownPremium"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/prima.png" alt="Premium" style="width: 20px; height: 20px; margin-right: 8px;">
+                        <span>Premium</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-premium" aria-labelledby="dropdownPremium">
+                        <li><a class="dropdown-item" href="MenusSemanales.html">Menús Semanales</a></li>
+                        <li><a class="dropdown-item" href="talleresc.html">Talleres de Cocina</a></li>
+                    </ul>
+                </div>
+
+                <a href="Retos.html">
+                    <img src="img/copa-trofeo.png" alt="Retos" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Retos</span>
+                </a>
+                <a href="tiendaeco.html">
+                    <img src="img/tienda.png" alt="Eco Tienda" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Eco Tienda</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="main">
+            <header class="header-bar d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                    <div id="main-logo" class="d-flex align-items-center gap-2">
+                        <i class="fas fa-seedling text-success"></i>
+                        <img src="img/LOGO3.png" alt="Eco Tienda"
+                            style="width: 50px; height: 50px; margin-right: 10px;">
+                        <span style="font-size: 25px; font-weight: bold;">EcoTaste</span>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                    <nav class="d-flex align-items-center gap-3 flex-wrap me-3">
+                        <a href="quienessomos.html" class="text-dark fw-semibold text-decoration-none">Quiénes Somos</a>
+                        <a href="contactanos.html" class="text-dark fw-semibold text-decoration-none">Contáctanos</a>
+                        <a href="soporte.html" class="text-dark fw-semibold text-decoration-none">Soporte</a>
+                    </nav>
+
+                    <!-- Botón de configuración y crear -->
+                    <div class="dropdown">
+                        <button class="btn btn-light rounded-circle p-2" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="img/masculino.png" alt="Config" class="icon-img">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="RecetasFavoritas.html">
+                                    Recetas Favoritas
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="perfil.html">
+                                    Perfil
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                    Cerrar sesión
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Botón Carrito -->
+                    <a class="crear-btn d-flex align-items-center gap-2" href="carrito.html">
+                        <img src="img/carrito.png" alt="Crear" class="crear-icon"> Carrito
+                    </a>
+
+
+                </div>
+            </header>
+
+            <!-- Puedes poner esto dentro de tu <body> donde quieras mostrar el producto -->
+            <div class="container my-5">
+                <div class="row align-items-center">
+                    <!-- Columna de imágenes/carousel -->
+                    <div class="col-12 col-md-5 mb-4 mb-md-0 d-flex flex-column align-items-center">
+                        <div id="carouselProducto" class="carousel slide carousel-producto-peq" data-bs-ride="carousel">
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active">
+                                    <img src="img/sushi.jpg" class="d-block w-100" alt="Sushi 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/sushi2.jpg" class="d-block w-100" alt="Sushi 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/sushi3.jpg" class="d-block w-100" alt="Sushi 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+
+                        <div class="mt-2 mb-3 text-center">
+                            <span class="fw-semibold">Valoración</span> <br>
+                            <span class="fw-semibold">5</span>
+                            <img src="img/estrella.png" alt="5 estrellas"
+                                style="width:90px; height:auto; margin-left:8px; vertical-align:middle;">
+                            <span class="text-muted ms-1">(100%)</span><br>
+
+                            <span class="fw-semibold">4</span>
+                            <img src="img/estrella0.png" alt="4 estrellas"
+                                style="width:90px; height:auto; margin-left:8px; vertical-align:middle;">
+                            <span class="text-muted ms-1">(0%)</span><br>
+
+                            <span class="fw-semibold">3</span>
+                            <img src="img/estrella0.png" alt="3 estrellas"
+                                style="width:90px; height:auto; margin-left:8px; vertical-align:middle;">
+                            <span class="text-muted ms-1">(0%)</span><br>
+
+                            <span class="fw-semibold">2</span>
+                            <img src="img/estrella0.png" alt="2 estrellas"
+                                style="width:90px; height:auto; margin-left:8px; vertical-align:middle;">
+                            <span class="text-muted ms-1">(0%)</span><br>
+
+                            <span class="fw-semibold">1</span>
+                            <img src="img/estrella0.png" alt="1 estrella"
+                                style="width:90px; height:auto; margin-left:8px; vertical-align:middle;">
+                            <span class="text-muted ms-1">(0%)</span>
+                        </div>
+                </div>
+
+                <div class="col-12 col-md-7">
+                    <h2 class="fw-bold mb-2">Kit para hacer Sushi</h2>
+                    <div class="text-danger fs-4 mb-2">S/200.00</div>
+                    <div class="mb-2">
+                        <span class="fw-semibold">Cantidad:</span>
+                        <span>1 unidad</span>
+                        <span class="text-muted ms-2">(3 disponibles)</span>
+                    </div>
+                    <button class="btn boton-buscar-eco rounded-pill ms-2"
+                        onclick="agregarAlCarrito('Kit para sushi', 120, 'img/sushi.jpg')">Agregar al carrito</button>
+                    <p>
+                        Todo lo que necesitas para hacer sushi en casa en un sólo kit (bueno, el producto fresco lo
+                        tienes que comprar en el supermercado).
+                    </p>
+                    <ul>
+                        <li>Arroz especial para hacer sushi (1 kg)</li>
+                        <li>Vinagre de arroz (500 ml)</li>
+                        <li>Alga nori, salsa de soya, wasabi, etc.</li>
+                        <li>Un frasco de salsa de soja Kikkoman (150 ml)</li>
+                        <li>Jengibre encurtido blanco o rosa (240g)</li>
+                        <li>Un tubo de wasabi (40g)</li>
+                        <li>Una esterilla de bambú para darle forma a los rollitos (makis)</li>
+                    </ul>
+                    <p>
+                        Este set de sushi es perfecto para principiantes que desean empezar a elaborar sus primeras
+                        recetas y quieren saber cómo hacer sushi en casa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    </div>
+
+
+    <footer class="text-white py-4">
+        <div class="container">
+            <div class="row align-items-start justify-content-between">
+
+                <div class="col-12 col-lg-3 mb-3 mb-lg-0">
+                    <div class="d-flex align-items-start">
+                        <img src="img/LOGO3.png" alt="EcoTaste Logo" style="width: 40px; height: 40px;"
+                            class="me-2 mt-1">
+                        <div>
+                            <strong class="fs-5">EcoTaste</strong><br>
+                            <small>Comida sostenible para un mejor futuro</small><br>
+                            <small>20/06/25 - Última modif. 1/07/2025 </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLUMNA DE ENLACES -->
+                <div class="col-12 col-lg-9">
+                    <div class="d-flex flex-wrap justify-content-between">
+
+                        <!-- Columna 1 -->
+                        <div class="p-2">
+                            <strong>Sobre Nosotros</strong><br>
+                            <a href="quienessomos.html" class="text-white text-decoration-none">Conócenos</a>
+                        </div>
+
+                        <!-- Columna 2 -->
+                        <div class="p-2">
+                            <strong>Ayuda</strong><br>
+                            <a href="soporte.html" class="text-white text-decoration-none">Soporte</a>
+                        </div>
+
+                        <!-- Columna 3 -->
+                        <div class="p-2">
+                            <strong>Contáctanos</strong><br>
+                            <a href="mailto:franzcarranza2@gmail.com"
+                                class="text-white d-block text-decoration-none">franzcarranza2@gmail.com</a>
+                            <a href="mailto:luispingo@gmail.com"
+                                class="text-white d-block text-decoration-none">luispingo@gmail.com</a>
+
+                        </div>
+
+                        <!-- Columna 4 -->
+                        <div class="p-2">
+                            <strong>Redes Sociales</strong><br>
+                            <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none mb-1">
+                                <img src="img/Instagram-Icon.png" style="width: 20px;"> Instagram
+                            </a>
+                            <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none mb-1">
+                                <img src="img/Facebook_logo_(square).png" style="width: 20px;"> Facebook
+                            </a>
+                            <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none">
+                                <img src="img/wsp.png" style="width: 20px;"> WhatsApp
+                            </a>
+                        </div>
+
+                        <!-- Columna 5 -->
+                        <div class="p-2">
+                            <strong>Equipo <br> Desarrollador</strong><br>
+                            <span>Contáctanos en:</span><br>
+                            <a href="EquiDesarr.html" class="text-white text-decoration-none">www.flaresystem.com</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pie de página inferior -->
+            <div class="text-center mt-4 border-top pt-3">
+                EcoTaste © 2025 - Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/trabajo.js"></script>
+    <script src="js/CarroPago.js"></script>
+    <script src="js/productostienda.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soporte EcoTaste</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/maqueta.css">
+    <link rel="stylesheet" href="css/carrito.css">
+
+</head>
+
+<body>
+
+    <div class="content-wrapper">
+        <div class="sidebar" id="sidebar">
+            <button class="toggle-btn" id="toggleSidebar">
+                <img src="img/menu.png" alt="Menú" class="toggle-icon">
+            </button>
+
+            <a href="inicio.html" id="sidebar-logo" class="d-flex align-items-center text-decoration-none mb-3">
+                <img src="img/LOGO3.png" alt="EcoTaste Logo" style="width: 24px; height: 24px; margin-right: 8px;">
+                <span class="fw-bold text-dark">EcoTaste</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="buscar.html">
+                    <img src="img/buscar.png" alt="Buscar" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Buscar</span>
+                </a>
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-decoration-none" id="dropdownPremium"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/prima.png" alt="Premium" style="width: 20px; height: 20px; margin-right: 8px;">
+                        <span>Premium</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-premium" aria-labelledby="dropdownPremium">
+                        <li><a class="dropdown-item" href="MenusSemanales.html">Menús Semanales</a></li>
+                        <li><a class="dropdown-item" href="talleresc.html">Talleres de Cocina</a></li>
+                    </ul>
+                </div>
+
+                <a href="Retos.html">
+                    <img src="img/copa-trofeo.png" alt="Retos" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Retos</span>
+                </a>
+                <a href="tiendaeco.html">
+                    <img src="img/tienda.png" alt="Eco Tienda" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Eco Tienda</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="main">
+            <header class="header-bar d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                    <div id="main-logo" class="d-flex align-items-center gap-2">
+                        <i class="fas fa-seedling text-success"></i>
+                        <img src="img/LOGO3.png" alt="Eco Tienda"
+                            style="width: 50px; height: 50px; margin-right: 10px;">
+                        <span style="font-size: 25px; font-weight: bold;">EcoTaste</span>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                    <nav class="d-flex align-items-center gap-3 flex-wrap me-3">
+                        <a href="quienessomos.html" class="text-dark fw-semibold text-decoration-none">Quiénes Somos</a>
+                        <a href="contactanos.html" class="text-dark fw-semibold text-decoration-none">Contáctanos</a>
+                        <a href="soporte.html" class="text-dark fw-semibold text-decoration-none">Soporte</a>
+                    </nav>
+
+                    <!-- Botón de configuración y crear -->
+                    <div class="dropdown">
+                        <button class="btn btn-light rounded-circle p-2" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="img/masculino.png" alt="Config" class="icon-img">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="RecetasFavoritas.html">
+                                    Recetas Favoritas
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="perfil.html">
+                                    Perfil
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                    Cerrar sesión
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Botón Carrito -->
+                    <a class="crear-btn d-flex align-items-center gap-2" href="carrito.html">
+                        <img src="img/carrito.png" alt="Crear" class="crear-icon"> Carrito
+                    </a>
+
+
+                </div>
+            </header>
+
+            <section class="container my-5">
+                <div class="row">
+
+                    <div class="col-md-8">
+                        <h2 class="titulo-soporte-eco mb-0">🛒 Tu Carrito </h2>
+                        <div class="carrito-header"
+                            style="display:flex; background:#bdbdbd; font-weight:bold; padding:10px 20; margin-bottom:1px;">
+                            <div style="flex:2; padding-left:16px;">PRODUCTO</div>
+                            <div style="flex:1; text-align:center;">PRECIO</div>
+                            <div style="flex:1; text-align:center;">CANTIDAD</div>
+                            <div style="flex:1; text-align:center;">TOTAL</div>
+                        </div>
+                        <div class="carrito-contenedor" id="carrito-lista"></div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="detallepago">
+                            <h4>Detalle de la compra</h4>
+                            <p>Gracias por tu compra. A continuación, te mostramos el detalle de tu pedido:</p>
+                        </div>
+                        <div class="acciones-carrito">
+                            <button class="btn btn-outline-secondary rounded-pill ms-2" onclick="vaciarCarrito()">Vaciar
+                                Carrito</button>
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="window.location.href='MetodoPago.html'">
+                                Proceder al Pago
+                            </button>
+
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="enviarPorWhatsApp()">Enviar boleta por WhatsApp</button>
+
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </div>
+
+
+    </div>
+
+
+    <footer class="text-white py-4">
+        <div class="container">
+            <div class="row align-items-start justify-content-between">
+
+                <div class="col-12 col-lg-3 mb-3 mb-lg-0">
+                    <div class="d-flex align-items-start">
+                        <img src="img/LOGO3.png" alt="EcoTaste Logo" style="width: 40px; height: 40px;"
+                            class="me-2 mt-1">
+                        <div>
+                            <strong class="fs-5">EcoTaste</strong><br>
+                            <small>Comida sostenible para un mejor futuro</small><br>
+                            <small>20/06/25 - Última modif. 1/07/2025 </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLUMNA DE ENLACES -->
+                <div class="col-12 col-lg-9">
+                    <div class="d-flex flex-wrap justify-content-between">
+
+                        <!-- Columna 1 -->
+                        <div class="p-2">
+                            <strong>Sobre Nosotros</strong><br>
+                            <a href="quienessomos.html" class="text-white text-decoration-none">Conócenos</a>
+                        </div>
+
+                        <!-- Columna 2 -->
+                        <div class="p-2">
+                            <strong>Ayuda</strong><br>
+                            <a href="soporte.html" class="text-white text-decoration-none">Soporte</a>
+                        </div>
+
+                        <!-- Columna 3 -->
+                        <div class="p-2">
+                            <strong>Contáctanos</strong><br>
+                            <a href="mailto:franzcarranza2@gmail.com"
+                                class="text-white d-block text-decoration-none">franzcarranza2@gmail.com</a>
+                            <a href="mailto:luispingo@gmail.com"
+                                class="text-white d-block text-decoration-none">luispingo@gmail.com</a>
+
+                        </div>
+
+                        <!-- Columna 4 -->
+                        <div class="p-2">
+                            <strong>Redes Sociales</strong><br>
+                            <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none mb-1">
+                                <img src="img/Instagram-Icon.png" style="width: 20px;"> Instagram
+                            </a>
+                            <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none mb-1">
+                                <img src="img/Facebook_logo_(square).png" style="width: 20px;"> Facebook
+                            </a>
+                            <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none">
+                                <img src="img/wsp.png" style="width: 20px;"> WhatsApp
+                            </a>
+                        </div>
+
+                        <!-- Columna 5 -->
+                        <div class="p-2">
+                            <strong>Equipo <br> Desarrollador</strong><br>
+                            <span>Contáctanos en:</span><br>
+                            <a href="EquiDesarr.html" class="text-white text-decoration-none">www.flaresystem.com</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pie de página inferior -->
+            <div class="text-center mt-4 border-top pt-3">
+                EcoTaste © 2025 - Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/trabajo.js"></script>
+    <script src="js/productostienda.js"></script>
+    <script src="js/CarroPago.js"></script>
+
+</body>
+
+</html>

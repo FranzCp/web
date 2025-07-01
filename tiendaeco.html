@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soporte EcoTaste</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/maqueta.css">
+    <link rel="stylesheet" href="css/tiendaeco.css">
+
+</head>
+
+<body>
+
+    <div class="content-wrapper">
+        <div class="sidebar" id="sidebar">
+            <button class="toggle-btn" id="toggleSidebar">
+                <img src="img/menu.png" alt="Menú" class="toggle-icon">
+            </button>
+
+            <a href="inicio.html" id="sidebar-logo" class="d-flex align-items-center text-decoration-none mb-3">
+                <img src="img/LOGO3.png" alt="EcoTaste Logo" style="width: 24px; height: 24px; margin-right: 8px;">
+                <span class="fw-bold text-dark">EcoTaste</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="buscar.html">
+                    <img src="img/buscar.png" alt="Buscar" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Buscar</span>
+                </a>
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-decoration-none" id="dropdownPremium"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/prima.png" alt="Premium" style="width: 20px; height: 20px; margin-right: 8px;">
+                        <span>Premium</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-premium" aria-labelledby="dropdownPremium">
+                        <li><a class="dropdown-item" href="MenusSemanales.html">Menús Semanales</a></li>
+                        <li><a class="dropdown-item" href="talleresc.html">Talleres de Cocina</a></li>
+                    </ul>
+                </div>
+
+                <a href="Retos.html">
+                    <img src="img/copa-trofeo.png" alt="Retos" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Retos</span>
+                </a>
+                <a href="tiendaeco.html">
+                    <img src="img/tienda.png" alt="Eco Tienda" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Eco Tienda</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="main">
+            <header class="header-bar d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                    <div id="main-logo" class="d-flex align-items-center gap-2">
+                        <i class="fas fa-seedling text-success"></i>
+                        <img src="img/LOGO3.png" alt="Eco Tienda"
+                            style="width: 50px; height: 50px; margin-right: 10px;">
+                        <span style="font-size: 25px; font-weight: bold;">EcoTaste</span>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                    <nav class="d-flex align-items-center gap-3 flex-wrap me-3">
+                        <a href="quienessomos.html" class="text-dark fw-semibold text-decoration-none">Quiénes Somos</a>
+                        <a href="contactanos.html" class="text-dark fw-semibold text-decoration-none">Contáctanos</a>
+                        <a href="soporte.html" class="text-dark fw-semibold text-decoration-none">Soporte</a>
+                    </nav>
+
+                    <!-- Botón de configuración y crear -->
+                    <div class="dropdown">
+                        <button class="btn btn-light rounded-circle p-2" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="img/masculino.png" alt="Config" class="icon-img">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="RecetasFavoritas.html">
+                                    Recetas Favoritas
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="perfil.html">
+                                    Perfil
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                    Cerrar sesión
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Botón Crear -->
+                    <a class="crear-btn d-flex align-items-center gap-2" href="carrito.html">
+                        <img src="img/carrito.png" alt="Crear" class="crear-icon"> Carrito (<span
+                            id="contador">0</span>)
+                    </a>
+                </div>
+            </header>
+            <div class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+                <h2 class="titulo-soporte-eco mb-0">EcoTienda</h2>
+                <div class="buscador-soporte">
+                    <div class="input-group" style="max-width: 700px; width: 100%;">
+                        <input type="text" class="form-control rounded-pill" id="input-busqueda-soporte"
+                            placeholder="Buscar">
+                        <button class="btn boton-buscar-eco rounded-pill ms-2" id="btn-buscar-soporte">Buscar</button>
+                    </div>
+                </div>
+            </div>
+            <p class="descripcion-tienda-eco">
+                Tu cocina, más verde. Descubre utensilios reutilizables, ingredientes naturales y todo lo que necesitas
+                para cocinar de forma sostenible.
+                En nuestra tienda, cada producto cuida tu salud y también la del planeta.
+            </p>
+            <div>
+                <p class="texto_corriendo">
+                    OFERTAS!! --- OFERTAS!! --- OFERTAS!! --- OFERTAS!! --- OFERTAS!! --- OFERTAS!! --- OFERTAS!! ---
+                    OFERTAS!! --- OFERTAS!! --- OFERTAS!!
+                </p>
+            </div>
+            <div class="row" id="resultadosBusquedaSoporte">
+                <div class="d-flex align-items-center mb-2">
+                    <h4 class="titulo-tienda-eco mb-0 me-2">Utensilios</h4>
+                    <a href="">Ver más</a>
+                </div>
+            </div>
+
+
+            <div class="fila-productos mb-4">
+                <div class="productooo-col">
+                    <div class="productooo">
+                        <img src="img/cuchillo.jpg" alt="Producto 2">
+                        <h4>Cuchillos</h4>
+                        <p class="mb-1 d-flex align-items-center">
+                            Valoración
+                            <img src="img/estrella.png" alt="Valoración 5 estrellas"
+                                style="width:90px; height:auto; margin-left:8px;">
+                        </p>
+                        <p>Precio S/.120</p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="verDetalles('Cuchillos')">Detalles</button>
+                            <button class="btn boton-buscar-eco rounded-pill ms-2"
+                                onclick="agregarAlCarrito('Cuchillos', 120, 'img/cuchillo.jpg')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productooo-col">
+                    <div class="productooo">
+                        <img src="img/cubiertos.png" alt="Producto 2">
+                        <h4>Cubiertos</h4>
+                        <p class="mb-1 d-flex align-items-center">
+                            Valoración
+                            <img src="img/estrella.png" alt="Valoración 5 estrellas"
+                                style="width:90px; height:auto; margin-left:8px;">
+                        </p>
+                        <p>Precio S/.100</p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="verDetalles('Cubiertos')">Detalles</button>
+                            <button class="btn boton-buscar-eco rounded-pill ms-2"
+                                onclick="agregarAlCarrito('Cubiertos', 100, 'img/cubiertos.png')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productooo-col">
+                    <div class="productooo">
+                        <img src="img/cucharon.jpg" alt="Producto 2">
+                        <h4>Cucharones</h4>
+                        <p class="mb-1 d-flex align-items-center">
+                            Valoración
+                            <img src="img/estrella.png" alt="Valoración 5 estrellas"
+                                style="width:90px; height:auto; margin-left:8px;">
+                        </p>
+                        <p>Precio S/.90</p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="verDetalles('Cucharones')">Detalles</button>
+                            <button class="btn boton-buscar-eco rounded-pill ms-2"
+                                onclick="agregarAlCarrito('Cucharones', 90, 'img/cucharon.jpg')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productooo-col">
+                    <div class="productooo">
+                        <img src="img/tabla.jpg" alt="Producto 2">
+                        <h4>Tabla de picar</h4>
+                        <p class="mb-1 d-flex align-items-center">
+                            Valoración
+                            <img src="img/estrella.png" alt="Valoración 5 estrellas"
+                                style="width:90px; height:auto; margin-left:8px;">
+                        </p>
+                        <p>Precio S/.30</p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="verDetalles('Tabla')">Detalles</button>
+                            <button class="btn boton-buscar-eco rounded-pill ms-2"
+                                onclick="agregarAlCarrito('Tabla de picar', 30, 'img/tabla.jpg')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productooo-col">
+                    <div class="productooo">
+                        <img src="img/kit.jpg" alt="Producto 2">
+                        <h4>Kit cocinero</h4>
+                        <p class="mb-1 d-flex align-items-center">
+                            Valoración
+                            <img src="img/estrella.png" alt="Valoración 5 estrellas"
+                                style="width:90px; height:auto; margin-left:8px;">
+                        </p>
+                        <p>Precio S/.200</p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="verDetalles('Kit1')">Detalles</button>
+                            <button class="btn boton-buscar-eco rounded-pill ms-2"
+                                onclick="agregarAlCarrito('Kit Cocinero', 200, 'img/kit.jpg')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="resultadosBusquedaSoporte">
+                <div class="d-flex align-items-center mb-2">
+                    <h4 class="titulo-tienda-eco mb-0 me-2">Ingredientes de cocina</h4>
+                    <a href="">Ver más</a>
+                </div>
+            </div>
+            <div class="fila-productos mb-4">
+                <div class="productooo-col">
+                    <div class="productooo">
+                        <img src="img/especias.jpg" alt="Producto 2">
+                        <h4>Especias</h4>
+                        <p class="mb-1 d-flex align-items-center">
+                            Valoración
+                            <img src="img/estrella.png" alt="Valoración 5 estrellas"
+                                style="width:90px; height:auto; margin-left:8px;">
+                        </p>
+                        <p>Precio S/.20</p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="verDetalles('Especias')">Detalles</button>
+                            <button class="btn boton-buscar-eco rounded-pill ms-2"
+                                onclick="agregarAlCarrito('Especias', 20, 'img/especias.jpg')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productooo-col">
+                    <div class="productooo">
+                        <img src="img/carne.jpg" alt="Producto 2">
+                        <h4>Cortes de Carne</h4>
+                        <p class="mb-1 d-flex align-items-center">
+                            Valoración
+                            <img src="img/estrella.png" alt="Valoración 5 estrellas"
+                                style="width:90px; height:auto; margin-left:8px;">
+                        </p>
+                        <p>Precio S/.250</p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="verDetalles('Cortes')">Detalles</button>
+                            <button class="btn boton-buscar-eco rounded-pill ms-2"
+                                onclick="agregarAlCarrito('Cortes de carne', 250, 'img/carne.jpg')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productooo-col">
+                    <div class="productooo">
+                        <img src="img/angus.jpeg" alt="Producto 2">
+                        <h4>Carne Americana</h4>
+                        <p class="mb-1 d-flex align-items-center">
+                            Valoración
+                            <img src="img/estrella.png" alt="Valoración 5 estrellas"
+                                style="width:90px; height:auto; margin-left:8px;">
+                        </p>
+                        <p>Precio S/.500</p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="verDetalles('Angus')">Detalles</button>
+                            <button class="btn boton-buscar-eco rounded-pill ms-2"
+                                onclick="agregarAlCarrito('Carne Americana', 500, 'img/angus.jpeg')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productooo-col">
+                    <div class="productooo">
+                        <img src="img/queso.jpg" alt="Producto 2">
+                        <h4>Kit para queso</h4>
+                        <p class="mb-1 d-flex align-items-center">
+                            Valoración
+                            <img src="img/estrella.png" alt="Valoración 5 estrellas"
+                                style="width:90px; height:auto; margin-left:8px;">
+                        </p>
+                        <p>Precio S/.110</p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="verDetalles('queso')">Detalles</button>
+                            <button class="btn boton-buscar-eco rounded-pill ms-2"
+                                onclick="agregarAlCarrito('Kit para queso', 110, 'img/queso.jpg')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productooo-col">
+                    <div class="productooo">
+                        <img src="img/sushi.jpg" alt="Producto 2">
+                        <h4>Kit para sushi</h4>
+                        <p class="mb-1 d-flex align-items-center">
+                            Valoración
+                            <img src="img/estrella.png" alt="Valoración 5 estrellas"
+                                style="width:90px; height:auto; margin-left:8px;">
+                        </p>
+                        <p>Precio S/.120</p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="location.href='detalleprod.html'">Detalles</button>
+
+                            <button class="btn boton-buscar-eco rounded-pill ms-2"
+                                onclick="agregarAlCarrito('Kit para sushi', 120, 'img/sushi.jpg')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="resultadosBusquedaSoporte">
+                <div class="d-flex align-items-center mb-2">
+                    <h4 class="titulo-tienda-eco mb-0 me-2">Souvenirs y regalos</h4>
+                    <a href="">Ver más</a>
+                </div>
+            </div>
+            <div class="fila-productos mb-4">
+                <div class="productooo-col">
+                    <div class="productooo">
+                        <img src="img/TBAG.jpg" alt="Producto 2">
+                        <h4>Totebag</h4>
+                        <p class="mb-1 d-flex align-items-center">
+                            Valoración
+                            <img src="img/estrella.png" alt="Valoración 5 estrellas"
+                                style="width:90px; height:auto; margin-left:8px;">
+                        </p>
+                        <p>Precio S/.40</p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="verDetalles('Totebag')">Detalles</button>
+                            <button class="btn boton-buscar-eco rounded-pill ms-2"
+                                onclick="agregarAlCarrito('Totebag', 40, 'img/TBAG.jpg')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productooo-col">
+                    <div class="productooo">
+                        <img src="img/bee.jpg" alt="Producto 2">
+                        <h4>Beeswax wraps</h4>
+                        <p class="mb-1 d-flex align-items-center">
+                            Valoración
+                            <img src="img/estrella.png" alt="Valoración 5 estrellas"
+                                style="width:90px; height:auto; margin-left:8px;">
+                        </p>
+                        <p>Precio S/.30</p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="verDetalles('Beeswax')">Detalles</button>
+                            <button class="btn boton-buscar-eco rounded-pill ms-2"
+                                onclick="agregarAlCarrito('Beeswax wraps', 30, 'img/bee.jpg')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productooo-col">
+                    <div class="productooo">
+                        <img src="img/pvasos.jpg" alt="Producto 2">
+                        <h4>Portavasos</h4>
+                        <p class="mb-1 d-flex align-items-center">
+                            Valoración
+                            <img src="img/estrella.png" alt="Valoración 5 estrellas"
+                                style="width:90px; height:auto; margin-left:8px;">
+                        </p>
+                        <p>Precio S/.25</p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="verDetalles('Portavasos')">Detalles</button>
+                            <button class="btn boton-buscar-eco rounded-pill ms-2"
+                                onclick="agregarAlCarrito('Portavasos', 120, 'img/pvasos.jpg')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productooo-col">
+                    <div class="productooo">
+                        <img src="img/te.png" alt="Producto 2">
+                        <h4>Bolsitas de té</h4>
+                        <p class="mb-1 d-flex align-items-center">
+                            Valoración
+                            <img src="img/estrella.png" alt="Valoración 5 estrellas"
+                                style="width:90px; height:auto; margin-left:8px;">
+                        </p>
+                        <p>Precio S/.35</p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="verDetalles('Bolsitas')">Detalles</button>
+                            <button class="btn boton-buscar-eco rounded-pill ms-2"
+                                onclick="agregarAlCarrito('Bolsitas de té', 35, 'img/te.png')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productooo-col">
+                    <div class="productooo">
+                        <img src="img/paños.jpg" alt="Producto 2">
+                        <h4>Paños de cocina</h4>
+                        <p class="mb-1 d-flex align-items-center">
+                            Valoración
+                            <img src="img/estrella.png" alt="Valoración 5 estrellas"
+                                style="width:90px; height:auto; margin-left:8px;">
+                        </p>
+                        <p>Precio S/.27</p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-secondary rounded-pill ms-2"
+                                onclick="verDetalles('Paños')">Detalles</button>
+                            <button class="btn boton-buscar-eco rounded-pill ms-2"
+                                onclick="agregarAlCarrito('Paños de cocina', 120, 'img/paños.jpg')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <footer class="text-white py-4">
+        <div class="container">
+            <div class="row align-items-start justify-content-between">
+
+                <div class="col-12 col-lg-3 mb-3 mb-lg-0">
+                    <div class="d-flex align-items-start">
+                        <img src="img/LOGO3.png" alt="EcoTaste Logo" style="width: 40px; height: 40px;"
+                            class="me-2 mt-1">
+                        <div>
+                            <strong class="fs-5">EcoTaste</strong><br>
+                            <small>Comida sostenible para un mejor futuro</small><br>
+                            <small>20/06/25 - Última modif. 1/07/2025 </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLUMNA DE ENLACES -->
+                <div class="col-12 col-lg-9">
+                    <div class="d-flex flex-wrap justify-content-between">
+
+                        <!-- Columna 1 -->
+                        <div class="p-2">
+                            <strong>Sobre Nosotros</strong><br>
+                            <a href="quienessomos.html" class="text-white text-decoration-none">Conócenos</a>
+                        </div>
+
+                        <!-- Columna 2 -->
+                        <div class="p-2">
+                            <strong>Ayuda</strong><br>
+                            <a href="soporte.html" class="text-white text-decoration-none">Soporte</a>
+                        </div>
+
+                        <!-- Columna 3 -->
+                        <div class="p-2">
+                            <strong>Contáctanos</strong><br>
+                            <a href="mailto:franzcarranza2@gmail.com"
+                                class="text-white d-block text-decoration-none">franzcarranza2@gmail.com</a>
+                            <a href="mailto:luispingo@gmail.com"
+                                class="text-white d-block text-decoration-none">luispingo@gmail.com</a>
+
+                        </div>
+
+                        <!-- Columna 4 -->
+                        <div class="p-2">
+                            <strong>Redes Sociales</strong><br>
+                            <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none mb-1">
+                                <img src="img/Instagram-Icon.png" style="width: 20px;"> Instagram
+                            </a>
+                            <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none mb-1">
+                                <img src="img/Facebook_logo_(square).png" style="width: 20px;"> Facebook
+                            </a>
+                            <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none">
+                                <img src="img/wsp.png" style="width: 20px;"> WhatsApp
+                            </a>
+                        </div>
+
+                        <!-- Columna 5 -->
+                        <div class="p-2">
+                            <strong>Equipo <br> Desarrollador</strong><br>
+                            <span>Contáctanos en:</span><br>
+                            <a href="EquiDesarr.html" class="text-white text-decoration-none">www.flaresystem.com</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pie de página inferior -->
+            <div class="text-center mt-4 border-top pt-3">
+                EcoTaste © 2025 - Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/trabajo.js"></script>
+    <script src="js/CarroPago.js"></script>
+    <script src="js/productostienda.js"></script>
+</body>
+
+</html>

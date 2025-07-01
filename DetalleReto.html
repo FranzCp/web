@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soporte EcoTaste</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/maqueta.css">
+    <link rel="stylesheet" href="css_Pingo/DetalleReto.css">
+</head>
+
+<body>
+
+    <div class="content-wrapper">
+        <div class="sidebar" id="sidebar">
+            <button class="toggle-btn" id="toggleSidebar">
+                <img src="img/menu.png" alt="Menú" class="toggle-icon">
+            </button>
+
+            <a href="inicio.html" id="sidebar-logo" class="d-flex align-items-center text-decoration-none mb-3">
+                <img src="img/LOGO3.png" alt="EcoTaste Logo" style="width: 24px; height: 24px; margin-right: 8px;">
+                <span class="fw-bold text-dark">EcoTaste</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#">
+                    <img src="img/buscar.png" alt="Buscar" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Buscar</span>
+                </a>
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-decoration-none" id="dropdownPremium"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/prima.png" alt="Premium" style="width: 20px; height: 20px; margin-right: 8px;">
+                        <span>Premium</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-premium" aria-labelledby="dropdownPremium">
+                        <li><a class="dropdown-item" href="MenusSemanales.html">Menús Semanales</a></li>
+                        <li><a class="dropdown-item" href="talleresc.html">Talleres de Cocina</a></li>
+                    </ul>
+                </div>
+
+                <a href="Retos.html">
+                    <img src="img/copa-trofeo.png" alt="Retos" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Retos</span>
+                </a>
+                <a href="tiendaeco.html">
+                    <img src="img/tienda.png" alt="Eco Tienda" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span>Eco Tienda</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="main">
+            <header class="header-bar d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                    <div id="main-logo" class="d-flex align-items-center gap-2">
+                        <i class="fas fa-seedling text-success"></i>
+                        <img src="img/LOGO3.png" alt="Eco Tienda"
+                            style="width: 50px; height: 50px; margin-right: 10px;">
+                        <span style="font-size: 25px; font-weight: bold;">EcoTaste</span>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                    <nav class="d-flex align-items-center gap-3 flex-wrap me-3">
+                        <a href="quienessomos.html" class="text-dark fw-semibold text-decoration-none">Quiénes Somos</a>
+                        <a href="contactanos.html" class="text-dark fw-semibold text-decoration-none">Contáctanos</a>
+                        <a href="soporte.html" class="text-dark fw-semibold text-decoration-none">Soporte</a>
+                    </nav>
+
+                    <!-- Botón de configuración y crear -->
+                    <div class="dropdown">
+                        <button class="btn btn-light rounded-circle p-2" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="img/masculino.png" alt="Config" class="icon-img">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                    Recetas Favoritas
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="perfil.html">
+                                    Perfil
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                    Cerrar sesión
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Botón Crear -->
+                    <button class="crear-btn d-flex align-items-center gap-2">
+                        <img src="img/boligrafo (1).png" alt="Crear" class="crear-icon"> Crear
+                    </button>
+
+
+                </div>
+            </header>
+
+            <!--Inicio del contenido-->
+
+            <div class="container my-4 detalle-reto-container">
+
+                <div class="reto-header-card card shadow-sm mb-4">
+                    <img src="Img_Pingo/pieManzana.png" class="card-img-top" alt="Día Nacional de la Tarta de Manzana">
+                    <div class="card-body">
+                        <div class="progress-section">
+                            <div class="progress-text d-flex justify-content-between align-items-center">
+                                <span>2 autores participando</span>
+                                <span class="reto-finaliza">acaba hoy</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 50%; background-color: #73A571;" aria-valuenow="50" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div class="recipes-count d-flex align-items-center mt-2">
+                                <img src="Img_Pingo/libro-de-recetas.png" alt="Fecha" class="me-2"
+                                    style="width: 20px; height: 20px;">
+                                <span>5 recetas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="reto-title text-center my-4">Día de la tarta de manzana</h3>
+                <p class="reto-description lead text-center mx-auto mb-4">
+                    Crujiente, jugosa, con canela o sin ella... la tarta de manzana tiene infinitas versiones y todas
+                    son deliciosas. Este día, rendimos tributo a este postre entrañable que siempre sabe a hogar.
+                    ¡Comparte tu receta estrella o anímate a probar una nueva!
+                </p>
+                <ul class="list-unstyled text-center mb-5 reto-variations">
+                    <li>- Tarta de manzana con crema pastelera</li>
+                    <li>- Tarta de manzana con hojaldre o masa filo</li>
+                    <li>- Bizcocho de manzana</li>
+                    <li>- Tarta de manzana y canela</li>
+                    <li>...¿Cuál es tu preferida? ¡Disfruta cocinando!</li>
+                </ul>
+
+                <div class="text-center mb-5">
+                    <button class="btn btn-success btn-lg">Incluir Receta</button>
+                </div>
+
+                <hr class="my-5">
+                <h3 class="mb-4 text-center">Recetas compartidas por la comunidad</h3>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="recetasComunidad">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm receta-comunidad-card">
+                            <img src="Img_Pingo/pieClasico.webp" class="card-img-top"
+                                alt="Tarta de Manzana Clásica">
+                            <div class="card-body">
+                                <h5 class="card-title">Tarta de Manzana Clásica</h5>
+                                <p class="card-text">Una receta tradicional con un toque moderno y ligero. Perfecta para
+                                    cualquier ocasión.</p>
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <small class="text-muted">Por: Juan Pérez</small>
+                                    <div class="rating">
+                                        <img src="Img_Pingo/estrella.png" style="width: 20px;">
+                                        <img src="Img_Pingo/estrella.png" style="width: 20px;">
+                                        <img src="Img_Pingo/estrella.png" style="width: 20px;">
+                                        <img src="Img_Pingo/estrellaVerde.png" style="width: 20px;">
+                                        <img src="Img_Pingo/estrellaVerde.png" style="width: 20px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 shadow-sm receta-comunidad-card">
+                            <img src="Img_Pingo/crumble.webp" class="card-img-top"
+                                alt="Crumble de Manzana y Avena">
+                            <div class="card-body">
+                                <h5 class="card-title">Crumble de Manzana y Avena</h5>
+                                <p class="card-text">Un postre rústico y saludable, ideal para el desayuno o la
+                                    merienda.</p>
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <small class="text-muted">Por: Ana Gómez</small>
+                                    <div class="rating">
+                                        <img src="Img_Pingo/estrella.png" style="width: 20px;">
+                                        <img src="Img_Pingo/estrella.png" style="width: 20px;">
+                                        <img src="Img_Pingo/estrella.png" style="width: 20px;">
+                                        <img src="Img_Pingo/estrella.png" style="width: 20px;">
+                                        <img src="Img_Pingo/estrella.png" style="width: 20px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="text-white py-4">
+        <div class="container">
+            <div class="row align-items-start justify-content-between">
+
+                <div class="col-12 col-lg-3 mb-3 mb-lg-0">
+                    <div class="d-flex align-items-start">
+                        <img src="img/LOGO3.png" alt="EcoTaste Logo" style="width: 40px; height: 40px;"
+                            class="me-2 mt-1">
+                        <div>
+                            <strong class="fs-5">EcoTaste</strong><br>
+                            <small>Comida sostenible para un mejor futuro</small><br>
+                            <small>20/06/25 - Última modif. 1/07/2025 </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLUMNA DE ENLACES -->
+                <div class="col-12 col-lg-9">
+                    <div class="d-flex flex-wrap justify-content-between">
+
+                        <!-- Columna 1 -->
+                        <div class="p-2">
+                            <strong>Sobre Nosotros</strong><br>
+                            <a href="quienessomos.html" class="text-white text-decoration-none">Conócenos</a>
+                        </div>
+
+                        <!-- Columna 2 -->
+                        <div class="p-2">
+                            <strong>Ayuda</strong><br>
+                            <a href="soporte.html" class="text-white text-decoration-none">Soporte</a>
+                        </div>
+
+                        <!-- Columna 3 -->
+                        <div class="p-2">
+                            <strong>Contáctanos</strong><br>
+                            <a href="mailto:franzcarranza2@gmail.com"
+                                class="text-white d-block text-decoration-none">franzcarranza2@gmail.com</a>
+                            <a href="mailto:luispingo@gmail.com"
+                                class="text-white d-block text-decoration-none">luispingo@gmail.com</a>
+
+                        </div>
+
+                        <!-- Columna 4 -->
+                        <div class="p-2">
+                            <strong>Redes Sociales</strong><br>
+                            <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none mb-1">
+                                <img src="img/Instagram-Icon.png" style="width: 20px;"> Instagram
+                            </a>
+                            <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none mb-1">
+                                <img src="img/Facebook_logo_(square).png" style="width: 20px;"> Facebook
+                            </a>
+                            <a href="#" class="d-flex align-items-center gap-2 text-white text-decoration-none">
+                                <img src="img/wsp.png" style="width: 20px;"> WhatsApp
+                            </a>
+                        </div>
+
+                        <!-- Columna 5 -->
+                        <div class="p-2">
+                            <strong>Equipo <br> Desarrollador</strong><br>
+                            <span>Contáctanos en:</span><br>
+                            <a href="EquiDesarr.html" class="text-white text-decoration-none">www.flaresystem.com</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pie de página inferior -->
+            <div class="text-center mt-4 border-top pt-3">
+                EcoTaste © 2025 - Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/trabajo.js"></script>
+
+</body>
+
+</html>
