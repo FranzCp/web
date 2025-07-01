@@ -1,0 +1,39 @@
+.campo-verde {
+  background-color: rgba(115, 165, 113, 0.5);
+  border: 1px solid #c2dfc2;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  padding: 6px 10px;
+  color: #414040; 
+}
+
+.campo-limitado {
+  max-width: 300px;
+  width: 100%;
+}
+
+textarea.campo-verde {
+  height: 100px;
+  resize: vertical;
+  color: #000; 
+}
+
+.form-control::placeholder,
+textarea::placeholder {
+  color: #000 !important;
+}
+
+.formulario-margen {
+  margin-left: 60px; /* Ajusta el valor según lo que necesites */
+}
+
+.boton-verde {
+  background-color: #73A571;
+  color: white;
+  border: none;
+}
+
+.boton-verde:hover {
+  background-color: #73A571 !important;
+  color: white !important;
+}

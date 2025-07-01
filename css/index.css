@@ -1,0 +1,73 @@
+.nav-pills .nav-link {
+    color: black !important;
+}
+
+.nav-pills .nav-link.active {
+    color: white !important;
+    background-color: #0d6efd !important;
+
+}
+
+.bg-dark-custom {
+    background-color: #102230;
+}
+
+.logo-img {
+    max-width: 90px;
+    height: auto;
+}
+
+.carousel-img {
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.btn-outline-primary:hover {
+    background-color: #21dfb6 !important;
+    border-color: #21dfb6 !important;
+    color: white !important;
+    transition: 0.3s ease;
+}
+
+footer .bg-light.text-dark:hover {
+    background-color: #21dfb6 !important;
+    color: white !important;
+    transition: 0.3s;
+}
+
+footer input.form-control {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+footer .form-label {
+    color: #ccc;
+}
+
+footer .fa-ul li i {
+    color: #21dfb6;
+}
+
+
+footer a.text-white:hover {
+    color: #21dfb6;
+    text-decoration: underline;
+}
+
+footer .table {
+    background-color: transparent !important;
+}
+
+footer .table td {
+    background-color: transparent !important;
+    color: white !important;
+    border-color: white !important;
+}
+
+footer .table tr {
+    background-color: transparent !important;
+}
+
+footer .table tbody tr td {
+    border-top: 1px solid white !important;
+}

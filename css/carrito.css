@@ -1,0 +1,68 @@
+.titulo-soporte-eco {
+  font-size: 2rem;
+  color: #2d3e50;
+  padding: 20px ;
+}
+.carrito-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.carrito-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+}
+
+.carrito-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.carrito-detalles {
+    flex: 1;
+}
+
+.total-final {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.acciones-carrito {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.detallepago {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+/* Puedes poner esto en tu archivo CSS principal */
+.carrito-header {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border-radius: 4px 4px  ;
+}
+.carrito-row {
+  background: #fff;
+  border-radius: 0 0 12px 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 0 #bdbdbd;
+}
+.carrito-row img {
+  box-shadow: 0 2px 8px #0001;
+}

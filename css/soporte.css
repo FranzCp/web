@@ -1,0 +1,45 @@
+.titulo-soporte-eco {
+  font-size: 2rem;
+  color: #2d3e50;
+}
+
+.descripcion-soporte-eco {
+  color: #444;
+}
+
+.pregunta-eco {
+  background-color: #97A991;
+  border: 1px solid #cceede;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.texto-pregunta-eco {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.respuesta-eco {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.boton-buscar-eco {
+  background-color: #73A571; 
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.boton-buscar-eco:hover {
+  background-color: #5c8e5e;
+}
+
+.contenedor-texto-soporte {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}

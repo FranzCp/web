@@ -1,0 +1,310 @@
+.weekly-menus-container {
+    padding: 20px;
+    background-color: #fff;
+    /* Asegura que el contenedor tenga fondo blanco */
+    border-radius: 15px;
+    /* Coincide con el main de maqueta.css */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.08);
+    /* Coincide con el main de maqueta.css */
+}
+
+.weekly-menus-container h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+    /* El título parece en negrita */
+    text-align: left;
+    /* Alineado a la izquierda como en la imagen */
+}
+
+.menu-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    /* Columnas responsivas */
+    gap: 25px;
+    /* Espacio entre las tarjetas */
+}
+
+.menu-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para las tarjetas */
+    overflow: hidden;
+    /* Asegura que la imagen no se desborde */
+    text-decoration: none;
+    /* Quitar subrayado del enlace */
+    color: inherit;
+    /* Heredar color de texto */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* Transición al pasar el mouse */
+    display: flex;
+    /* Para organizar la imagen y el contenido */
+    flex-direction: column;
+    /* Contenido apilado verticalmente */
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    /* Pequeño levantamiento al pasar el mouse */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    /* Sombra más pronunciada */
+}
+
+.menu-card-img {
+    width: 100%;
+    height: 180px;
+    /* Altura fija para las imágenes */
+    object-fit: cover;
+    /* Recorta la imagen para cubrir el área */
+    border-top-left-radius: 10px;
+    /* Redondeo de la imagen para la esquina superior izquierda */
+    border-top-right-radius: 10px;
+    /* Redondeo de la imagen para la esquina superior derecha */
+}
+
+.menu-card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    /* Permite que el contenido ocupe el espacio restante */
+}
+
+.menu-card-content h4 {
+    font-size: 1.05em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+    line-height: 1.3;
+    /* Ajuste de línea para títulos largos */
+    font-weight: bold;
+    /* Título de la tarjeta en negrita */
+}
+
+.menu-card-info {
+    display: flex;
+    align-items: center;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.menu-card-info .info-icon {
+    width: 18px;
+    /* Tamaño del icono de utensilio */
+    height: 18px;
+    margin-right: 8px;
+    object-fit: contain;
+}
+
+.ecotaste-header {
+    max-width: 700px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+}
+
+.ecotaste-logo-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 10px;
+}
+
+.ecotaste-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #8bb98b;
+    object-fit: cover;
+}
+
+.ecotaste-titulo {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    color: #222;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.ecotaste-desc {
+    margin: 0 0 18px 0;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.ecotaste-buscador {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.ecotaste-buscador input[type="text"] {
+    width: 400px;
+    max-width: 90vw;
+    padding: 8px 16px;
+    border: 2px solid #222;
+    border-radius: 25px 0 0 25px;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.ecotaste-buscador button {
+    border: 2px solid #222;
+    border-left: none;
+    background: #fff;
+    border-radius: 0 25px 25px 0;
+    padding: 0 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.ecotaste-buscador button:hover {
+    background: #f0f0f0;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 1200px) {
+    .menu-cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .menu-cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .weekly-menus-container h2 {
+        text-align: center;
+        /* Centrar el título en pantallas pequeñas */
+    }
+
+    .menu-cards-grid {
+        grid-template-columns: 1fr;
+        /* Una columna en móviles */
+        padding: 0 10px;
+        /* Un poco de padding horizontal */
+    }
+
+    .menu-card {
+        max-width: 350px;
+        /* Limitar el ancho de las tarjetas en móvil si hay una sola columna */
+        margin: 0 auto;
+        /* Centrar las tarjetas */
+    }
+}
+
+@media (max-width: 480px) {
+    .weekly-menus-container {
+        padding: 15px;
+    }
+
+    .weekly-menus-container h2 {
+        font-size: 1.6em;
+    }
+
+    .menu-card-img {
+        height: 160px;
+    }
+
+    .menu-card-content {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .ecotaste-logo-titulo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ecotaste-titulo {
+        font-size: 2rem;
+    }
+
+    .ecotaste-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .ecotaste-buscador input[type="text"] {
+        width: 100%;
+        min-width: 0;
+        font-size: 1rem;
+    }
+
+    .ecotaste-buscador {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .ecotaste-buscador button {
+        border-radius: 25px;
+        width: 100%;
+        justify-content: center;
+        border-left: 2px solid #222;
+    }
+}
+
+.banner-pie-limon {
+    display: flex;
+    align-items: stretch;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f3f3f3;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0 2px 8px #0001;
+}
+.banner-img {
+    width: 60%;
+    object-fit: cover;
+    min-height: 150px;
+}
+.banner-texto {
+    width: 40%;
+    background: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 24px 24px 32px;
+    
+}
+.banner-texto h2 {
+    color: #38b000;
+    font-size: 2rem;
+    margin: 0 0 16px 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.banner-link {
+    color: #2a1aff;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+@media (max-width: 600px) {
+    .banner-pie-limon {
+        flex-direction: column;
+    }
+    .banner-img, .banner-texto {
+        width: 100%;
+        min-height: unset;
+    }
+    .banner-texto {
+        clip-path: none;
+        padding: 18px;
+        align-items: center;
+        text-align: center;
+    }
+}

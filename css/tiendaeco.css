@@ -1,0 +1,99 @@
+.boton-buscar-eco {
+  background-color: #73A571;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.titulo-soporte-eco {
+  font-size: 2rem;
+  color: #2d3e50;
+}
+
+.descripcion-tienda-eco {
+  color: #444;
+}
+
+.productooo {
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background: #ffffff98;
+  border: 3px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.productooo img {
+  width: 70%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.fila-productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.productooo-col {
+  flex: 1 1 calc(20% - 16px);
+  max-width: calc(20% - 16px);
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+.carousel-producto-peq {
+  max-width: 320px;
+  margin: 0 auto 10px auto;
+}
+
+
+.texto_corriendo {
+  padding: 5px;
+  background-color: #ffffff;
+  color: #ce1111;
+  font-size: 20px;
+  font-weight: bold;
+  animation: movimiento 10s alternate infinite;
+}
+
+@keyframes movimiento {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .productooo-col {
+    flex: 1 1 calc(33.33% - 16px);
+    max-width: calc(33.33% - 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .productooo-col {
+    flex: 1 1 calc(50% - 16px);
+    max-width: calc(50% - 16px);
+  }
+}
+
+@media (max-width: 576px) {
+  .productooo-col {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

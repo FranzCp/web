@@ -1,0 +1,53 @@
+/* cards largas */
+.card.flex-row img {
+  height: 100%;
+}
+
+#galeriaRecetas::-webkit-scrollbar {
+  height: 6px;
+}
+
+#galeriaRecetas {
+  scrollbar-width: none; 
+}
+
+#galeriaRecetas::-webkit-scrollbar {
+  display: none; 
+}
+
+.custom-btn {
+  background-color: #73A571 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.custom-btn:hover,
+.custom-btn:focus,
+.custom-btn:active {
+  background-color: #73A571 !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.btn-aplicar {
+  background-color: #73A571 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.contenedor-principal {
+  flex: 1;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.08);
+}

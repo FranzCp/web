@@ -1,0 +1,33 @@
+.seccion-info-empresa {
+  max-width: 1140px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.cuadro-info {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  border: 1px solid #d0d0d0; 
+}
+
+.img-info-empresa {
+  max-width: 350px;    
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.subtitulo-info {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #73A571;
+}
+
+.texto-info {
+  font-size: 1rem;
+  color: #333;
+}
