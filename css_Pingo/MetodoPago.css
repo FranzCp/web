@@ -1,0 +1,122 @@
+.payment-selection-container {
+    max-width: 900px;
+    margin: auto; 
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); 
+    font-family: Arial, sans-serif; 
+    color: #333;
+}
+
+.payment-selection-container h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: normal; 
+}
+
+.payment-card-section {
+    border: 1px solid #ddd; 
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px; 
+}
+
+.payment-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.payment-card-header .card-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.payment-card-header h3 {
+    font-size: 1.2em;
+    font-weight: bold; 
+    margin: 0; 
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block; 
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    outline: none; 
+    transition: border-color 0.2s;
+}
+
+.form-group input[type="text"]:focus {
+    border-color: #73A571; 
+}
+
+.form-row {
+    display: flex;
+    gap: 20px; 
+    margin-bottom: 15px;
+}
+
+.form-row .form-group {
+    flex: 1; 
+    margin-bottom: 0; 
+}
+
+.payment-submit-button {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px; 
+    font-size: 1.1em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px; 
+}
+
+.payment-submit-button:last-child {
+    margin-bottom: 0; 
+}
+
+.credit-card-btn,
+.yape-btn,
+.pagoefectivo-btn {
+    background-color: #73A571; 
+}
+
+.payment-submit-button:hover {
+    background-color: #5e8a5c; 
+}
+
+@media (max-width: 600px) {
+    .payment-selection-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .form-row {
+        flex-direction: column; 
+        gap: 0;
+    }
+    .form-row .form-group {
+        margin-bottom: 15px; 
+    }
+}

@@ -1,0 +1,268 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #73A571;
+}
+
+.full-screen-background-container {
+    flex-grow: 1;
+    position: relative;
+    background-image: url('../Img_Pingo/inicio.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.full-screen-background-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.eco-taste-info {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    max-width: 450px;
+    margin-right: 50px;
+}
+
+.eco-taste-info .logo img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.eco-taste-info .logo h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.eco-taste-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.login-panel {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    width: 100%;
+    max-width: 650px;
+    min-width: 380px;
+    margin-left: 50px;
+    box-sizing: border-box;
+}
+
+.login-box {
+    padding: 0 !important;
+}
+
+.login-box h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 2em;
+    color: #333;
+    font-weight: bold;
+}
+
+.new-user {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 0.95em;
+}
+
+.new-user a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.new-user a:hover {
+    text-decoration: underline;
+}
+
+.mb-3,
+.mb-4 {
+    margin-bottom: 20px !important;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-control {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.btn-success {
+    background-color: #4CAF50 !important;
+    border-color: #4CAF50 !important;
+    color: white;
+    padding: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.btn-success:hover {
+    background-color: #45a049 !important;
+    border-color: #45a049 !important;
+}
+
+.divider {
+    margin: 30px 0;
+    position: relative;
+    text-align: center;
+    line-height: 0;
+}
+
+.divider span {
+    background-color: white;
+    padding: 0 10px;
+    color: #aaa;
+    font-size: 1.2em;
+    position: relative;
+    z-index: 1;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ddd;
+    z-index: 0;
+    transform: translateY(-50%);
+}
+
+.social-login .btn {
+    padding: 12px;
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.social-login .btn i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.social-login .btn-danger {
+    background-color: #db4437 !important;
+    border-color: #db4437 !important;
+    color: white;
+}
+
+.social-login .btn-danger:hover {
+    background-color: #c23321 !important;
+    border-color: #c23321 !important;
+}
+
+.social-login .btn-primary {
+    background-color: #3b5998 !important;
+    border-color: #3b5998 !important;
+    color: white;
+}
+
+.social-login .btn-primary:hover {
+    background-color: #2d4373 !important;
+    border-color: #2d4373 !important;
+}
+
+.social-login .btn-dark {
+    background-color: #000 !important;
+    border-color: #000 !important;
+    color: white;
+}
+
+.social-login .btn-dark:hover {
+    background-color: #333 !important;
+    border-color: #333 !important;
+}
+
+footer {
+    text-align: center;
+    padding: 0px;
+    color: #666;
+    font-size: 0.9em;
+    background-color: #E0EACE;
+    width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    height: 0px;
+}
+
+@media (max-width: 992px) {
+
+    .full-screen-background-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 30px 20px;
+        min-height: auto;
+    }
+
+    .eco-taste-info {
+        margin-right: 0;
+        margin-bottom: 30px;
+        max-width: 90%;
+    }
+
+    .login-panel {
+        margin-left: 0;
+        max-width: 400px;
+        width: 95%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .eco-taste-info h1 {
+        font-size: 2em;
+    }
+
+    .eco-taste-info p {
+        font-size: 1em;
+    }
+
+    .login-panel {
+        padding: 20px;
+    }
+
+    .login-box h2 {
+        font-size: 1.6em;
+    }
+}

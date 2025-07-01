@@ -1,0 +1,171 @@
+h1 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.premium-plan-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.pricing-table {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; 
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.table-header,
+.table-row {
+    display: contents; 
+}
+
+.table-header > div,
+.table-row > div {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgb(149, 148, 148);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.table-header > div {
+    border-bottom: none;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.table-header .feature-title {
+    justify-content: flex-start;
+    background-color: #fff; 
+}
+
+
+
+.table-header .plan-title.premium {
+    background-color: #73a57189; 
+    color: #4CAF50;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+.table-row .feature-name {
+    justify-content: flex-start;
+    color: #555;
+}
+
+.table-row .status-icon,
+.table-row .status-text {
+    justify-content: center;
+    text-align: center;
+}
+
+.table-row > div:nth-child(3) { 
+    background-color: #73a57189; 
+}
+
+.table-row .status-text.premium {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.status-icon img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.payment-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.payment-button {
+    background-color: #73A571; 
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payment-button:hover {
+    background-color: #5e8a5c;
+}
+
+.price-info {
+    font-size: 1.3em;
+    color: #333;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.price-value {
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .pricing-table {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .table-header .feature-title {
+        grid-column: 1 / 3; 
+        border-right: none;
+    }
+
+    .table-header .plan-title {
+        border-left: none;
+    }
+
+    .table-row .feature-name {
+        grid-column: 1 / 3; 
+        border-right: none;
+    }
+    
+    .table-row > div:nth-child(2),
+    .table-row > div:nth-child(3) {
+        border-left: none; 
+    }
+
+    .payment-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    .subtitle {
+        font-size: 1em;
+    }
+    .payment-button {
+        width: 100%;
+        text-align: center;
+    }
+}

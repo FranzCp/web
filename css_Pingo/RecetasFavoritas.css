@@ -1,0 +1,122 @@
+#listaRecetasFavoritas {
+    min-height: 200px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#listaRecetasFavoritas .mensaje-vacio {
+    text-align: center;
+    color: #777;
+    margin-top: 50px;
+    font-size: 1.1em;
+    padding: 20px;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.tarjeta-receta-favorita {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-receta-favorita:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta-receta-favorita img.receta-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.tarjeta-receta-favorita .info {
+    flex-grow: 1;
+}
+
+.tarjeta-receta-favorita h5 {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 1.3em;
+}
+
+.tarjeta-receta-favorita p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.tarjeta-receta-favorita p strong {
+    color: #555;
+}
+
+.tarjeta-receta-favorita .btn-quitar-favorito {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease;
+    align-self: flex-start;
+}
+
+.tarjeta-receta-favorita .btn-quitar-favorito:hover {
+    background-color: #c82333;
+}
+
+.contenedor-principal {
+    padding: 20px;
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
+.content-wrapper.sidebar-collapsed .contenedor-principal {
+    margin-left: 80px;
+}
+
+@media (max-width: 992px) {
+    .contenedor-principal {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .tarjeta-receta-favorita {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .tarjeta-receta-favorita img.receta-img {
+        margin-bottom: 15px;
+    }
+
+    .tarjeta-receta-favorita .btn-quitar-favorito {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tarjeta-receta-favorita h5 {
+        font-size: 1.2em;
+    }
+
+    .tarjeta-receta-favorita p {
+        font-size: 0.9em;
+    }
+}

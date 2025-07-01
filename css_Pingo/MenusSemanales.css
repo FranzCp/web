@@ -1,0 +1,117 @@
+.weekly-menus-container {
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 15px; 
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.08);
+}
+
+.weekly-menus-container h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold; 
+    text-align: left; 
+}
+
+.menu-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 25px; 
+}
+
+.menu-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    text-decoration: none; 
+    color: inherit; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.menu-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); 
+}
+
+.menu-card-img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+.menu-card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; 
+}
+
+.menu-card-content h4 {
+    font-size: 1.05em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+    line-height: 1.3; 
+    font-weight: bold; 
+}
+
+.menu-card-info {
+    display: flex;
+    align-items: center;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.menu-card-info .info-icon {
+    width: 18px; 
+    height: 18px;
+    margin-right: 8px;
+    object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+    .menu-cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .menu-cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .weekly-menus-container h2 {
+        text-align: center; 
+    }
+    .menu-cards-grid {
+        grid-template-columns: 1fr; 
+        padding: 0 10px; 
+    }
+    .menu-card {
+        max-width: 350px; 
+        margin: 0 auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    .weekly-menus-container {
+        padding: 15px;
+    }
+    .weekly-menus-container h2 {
+        font-size: 1.6em;
+    }
+    .menu-card-img {
+        height: 160px;
+    }
+    .menu-card-content {
+        padding: 12px;
+    }
+}

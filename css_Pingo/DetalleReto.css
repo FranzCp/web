@@ -1,0 +1,199 @@
+.detalle-reto-container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.reto-header-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reto-header-card .card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.reto-header-card .card-body {
+    padding: 20px;
+    position: relative;
+}
+
+.progress-section {
+    position: relative; 
+    background-color: white; 
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-top: -60px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 10; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; 
+    max-width: 400px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.progress-section .progress-text {
+    font-size: 0.95em;
+    color: #555;
+    font-weight: 500;
+}
+
+.reto-finaliza {
+    font-weight: bold;
+    color: #dc3545; 
+}
+
+.progress {
+    height: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #73A571;
+}
+
+.recipes-count {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.recipes-count img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.reto-title {
+    color: #333;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.reto-description {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+.reto-variations {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.8;
+}
+
+.btn-success {
+    background-color: #73A571;
+    border-color: #73A571;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-success:hover {
+    background-color: #5a8d58; 
+    border-color: #5a8d58;
+}
+
+#recetasComunidad {
+    margin-top: 40px;
+}
+
+.receta-comunidad-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.receta-comunidad-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.receta-comunidad-card .card-img-top {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+
+.receta-comunidad-card .card-body {
+    padding: 15px;
+}
+
+.receta-comunidad-card .card-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.receta-comunidad-card .card-text {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.receta-comunidad-card small.text-muted {
+    font-size: 0.85em;
+    color: #777;
+}
+
+.receta-comunidad-card .rating img {
+    width: 18px; 
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+@media (max-width: 768px) {
+    .reto-header-card .card-img-top {
+        height: 250px;
+    }
+    .progress-section {
+        margin-top: -40px; 
+        width: 95%;
+    }
+    .reto-title {
+        font-size: 2em;
+    }
+    .reto-description {
+        font-size: 1em;
+    }
+    .receta-comunidad-card .card-img-top {
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .reto-header-card .card-img-top {
+        height: 200px;
+    }
+    .progress-section {
+        margin-top: -30px;
+        padding: 10px 15px;
+    }
+    .reto-title {
+        font-size: 1.8em;
+    }
+    .btn-success {
+        width: 100%;
+        font-size: 1em;
+    }
+    .receta-comunidad-card .card-img-top {
+        height: 150px;
+    }
+}
